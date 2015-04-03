@@ -1,7 +1,7 @@
 #lang racket
 
 ;; ********************************************************************************************
-;;  UW Tools
+;;  uWaterloo Tools
 ;;
 ;;  @description: A module for retrieving the required information from the uWaterloo API
 ;;  @author: Elisha Lai
