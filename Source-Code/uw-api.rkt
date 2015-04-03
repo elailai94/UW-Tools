@@ -8,7 +8,7 @@
 ;;  @version: 1.0 01/01/2014
 ;; ********************************************************************************************
 
-;; Note: See https://github.com/uWaterloo/api-documentation for more information
+;; Note: See https://www.github.com/uWaterloo/api-documentation for more information
 
 (provide uw-api)
 
