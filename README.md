@@ -36,10 +36,25 @@ uWaterloo Tools is a library for retrieving the required information from the Un
 |:---------------|:--------|:------------------------------------------------------|
 |**consent**     | Boolean | Requirement for Instructor's & Department's Consent   |
 
-#### Full courses 
+#### Courses That Are Worth At Least 0.5 Course Units
 ```Racket
 (full-courses subject catalog-list)
 ```
+##### Parameters
+| Parameter         | Type           | Required   | Description                               |
+|:------------------|:---------------|:-----------|:------------------------------------------|
+|**subject**        | String         | Yes        | Valid uWaterloo subject name              |
+|**catalog-list**   | listof Int     | Yes        | A list of valid uWaterloo course numbers  |
+##### Response
+| Field Name               | Type       | Description                                                                        |
+|:-------------------------|:-----------|:-----------------------------------------------------------------------------------|
+|**full courses list**     | listof Int | A list of valid uWaterloo course numbers that are worth at least 0.5 course units  |
+
+#### Section Names for a Course
+```Racket
+(course-sections term subject catalog)
+```
+
 
 ### License
 uWaterloo Tools is licensed under the [MIT license.](https://github.com/elailai94/uWaterloo-Tools/blob/master/LICENSE)
