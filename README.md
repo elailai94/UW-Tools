@@ -119,7 +119,25 @@ uWaterloo Tools is a library for retrieving the required information from the Un
 ```Racket
 (room-status building room day time)
 ```
+##### Parameters
+| Parameter    | Type           | Required   | Description                                                       |
+|:-------------|:---------------|:-----------|:------------------------------------------------------------------|
+|**building**  | String         | Yes        | Valid uWaterloo building                                          |
+|**room**      | Int            | Yes        | Valid room number in the particular building                      |
+|**day**       | String         | Yes        | Day from one of the following: "M", "T", "W", "Th", "F"           |
+|**time**      | String         | Yes        | Time must follow the 24-hour format                               |
+##### Response
+| Field Name           | Type          | Description              |
+|:---------------------|:--------------|:-------------------------|
+|**room status**       | String        | Room status              |
 
+> Note: **room status** is in the following format:
+>
+>     "subject catalog title"
+>
+>   * *subject* is the course subject,
+>   * *catalog* is the course number,
+>   * *title* is the course title.
 
 ### License
 uWaterloo Tools is licensed under the [MIT license.](https://github.com/elailai94/uWaterloo-Tools/blob/master/LICENSE)
