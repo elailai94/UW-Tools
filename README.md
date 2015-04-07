@@ -92,7 +92,7 @@ uWaterloo Tools is a library for retrieving the required information from the Un
 >       - weekdays is the days when the course section occurs,
 >       - building is the building where the course section occurs,
 >       - room is the room where the course section occurs,
->       - instructor is the instructor for the course section).
+>       - instructor is the instructor for the course section.
 
 ### License
 uWaterloo Tools is licensed under the [MIT license.](https://github.com/elailai94/uWaterloo-Tools/blob/master/LICENSE)
