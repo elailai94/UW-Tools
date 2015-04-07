@@ -22,3 +22,21 @@ uWaterloo Tools is a library for retrieving the required information from the Un
 |:---------------|:--------|:----------------------------|
 |**description** | String  | Brief course description    |
 
+#### Instructor's & Department's Consent for Course Enrolment for a Course
+```Racket
+(needs-consent? subject catalog)
+```
+##### Parameters
+| Parameter    | Type    | Required   | Description                               |
+|:-------------|:--------|:-----------|:------------------------------------------|
+|**subject**   | String  | Yes        | Valid uWaterloo subject name              |
+|**catalog**   | Int     | Yes        | Valid uWaterloo course number             |
+##### Response
+| Field Name     | Type    | Description                                           |
+|:---------------|:--------|:------------------------------------------------------|
+|**consent**     | Boolean | Requirement for Instructor's & Department's Consent   |
+
+#### Full courses 
+```Racket
+(full-courses subject catalog-list)
+```
