@@ -87,10 +87,10 @@ Note: **section info** is in the following format:
      
      where:
      
-    - subject is the course subject,
-    - catalog is the course number,
-    - section is the course section,
-    - s-time is the starting time for the course section,
+    * subject is the course subject,
+    * catalog is the course number,
+    * section is the course section,
+    * s-time is the starting time for the course section,
     - e-time is the ending time for the course section,
     - weekdays is the days when the course section occurs,
     - building is the building where the course section occurs,
