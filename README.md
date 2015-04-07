@@ -10,13 +10,13 @@ uWaterloo Tools is a library for retrieving the required information from the Un
 ### Usage
 ### Course Description for a Course
 ```Racket
-(course-desc subject catelog)
+(course-desc subject catalog)
 ```
 #### Parameters
 | Parameter    | Type    | Required   | Description                               |
 |:-------------|:--------|:-----------|:------------------------------------------|
 |**subject**   | String  | Yes        | Valid uWaterloo subject name              |
-|**catelogue** | Int     | Yes        | Valid uWaterloo course number             |
+|**catalog**   | Int     | Yes        | Valid uWaterloo course number             |
 #### Response
 | Field Name     | Type    | Description                 |
 |:---------------|:--------|:----------------------------|
