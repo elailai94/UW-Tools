@@ -40,3 +40,6 @@ uWaterloo Tools is a library for retrieving the required information from the Un
 ```Racket
 (full-courses subject catalog-list)
 ```
+
+### License
+uWaterloo Tools is licensed under the [MIT license.](https://github.com/elailai94/uWaterloo-Tools/blob/master/LICENSE)
