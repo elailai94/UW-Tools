@@ -81,7 +81,7 @@ uWaterloo Tools is a library for retrieving the required information from the Un
 |:---------------------|:--------------|:-------------------------|
 |**section info**      | String        | Section information      |
 
-> Note: **section info** is in the following format:
+> Note: **section info** is in the following format: @cr
 >     "subject catalog section s-time-e-time weekdays building room instructor"
 >     where:
      
