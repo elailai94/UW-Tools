@@ -85,7 +85,7 @@ uWaterloo Tools is a library for retrieving the required information from the Un
 >
 >     "subject catalog section s-time-e-time weekdays building room instructor"
 >
->    * subject is the course subject,
+>    * *subject* is the course subject,
 >    * catalog is the course number,
 >    * section is the course section,
 >    * s-time is the starting time for the course section,
