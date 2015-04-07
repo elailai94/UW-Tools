@@ -8,16 +8,17 @@ uWaterloo Tools is a library for retrieving the required information from the Un
 ```
 
 ### Usage
-### Course Description for a Course
+#### Course Description for a Course
 ```Racket
 (course-desc subject catalog)
 ```
-#### Parameters
+##### Parameters
 | Parameter    | Type    | Required   | Description                               |
 |:-------------|:--------|:-----------|:------------------------------------------|
 |**subject**   | String  | Yes        | Valid uWaterloo subject name              |
 |**catalog**   | Int     | Yes        | Valid uWaterloo course number             |
-#### Response
+##### Response
 | Field Name     | Type    | Description                 |
 |:---------------|:--------|:----------------------------|
 |**description** | String  | Brief course description    |
+
