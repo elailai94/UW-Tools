@@ -112,8 +112,8 @@ uWaterloo Tools is a library for retrieving the required information from the Un
 >
 >     "date name"
 >
->     * *date* is the date of the holiday in the following format: YYYY-MM-DD,
->     * *name* is the name of the holiday.
+>   * *date* is the date of the holiday in the following format: YYYY-MM-DD,
+>   * *name* is the name of the holiday.
 
 #### Room Status
 ```Racket
