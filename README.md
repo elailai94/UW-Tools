@@ -116,6 +116,9 @@ uWaterloo Tools is a library for retrieving the required information from the Un
 >     * *name* is the name of the holiday.
 
 #### Room Status
+```Racket
+(room-status building room day time)
+```
 
 
 ### License
