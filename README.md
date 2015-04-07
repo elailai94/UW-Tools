@@ -46,15 +46,53 @@ uWaterloo Tools is a library for retrieving the required information from the Un
 |**subject**        | String         | Yes        | Valid uWaterloo subject name              |
 |**catalog-list**   | listof Int     | Yes        | A list of valid uWaterloo course numbers  |
 ##### Response
-| Field Name               | Type       | Description                                                                        |
-|:-------------------------|:-----------|:-----------------------------------------------------------------------------------|
-|**full courses list**     | listof Int | A list of valid uWaterloo course numbers that are worth at least 0.5 course units  |
+| Field Name            | Type       | Description                                                                        |
+|:----------------------|:-----------|:-----------------------------------------------------------------------------------|
+|**full courses list**  | listof Int | A list of valid uWaterloo course numbers that are worth at least 0.5 course units  |
 
 #### Section Names for a Course
 ```Racket
 (course-sections term subject catalog)
 ```
+##### Parameters
+| Parameter    | Type           | Required   | Description                                                       |
+|:-------------|:---------------|:-----------|:------------------------------------------------------------------|
+|**term**      | Int            | Yes        | Valid term following uWaterloo term numbering system              |
+|**subject**   | String         | Yes        | Valid uWaterloo subject name                                      |
+|**catalog**   | Int            | Yes        | Valid uWaterloo course number                                     |
+##### Response
+| Field Name           | Type          | Description              |
+|:---------------------|:--------------|:-------------------------|
+|**section names**     | listof String | A list of section names  |
 
+#### Section Information for a Particular Section for a Course
+```Racket
+(section-info term subject catalog section)
+```
+##### Parameters
+| Parameter    | Type           | Required   | Description                                                       |
+|:-------------|:---------------|:-----------|:------------------------------------------------------------------|
+|**term**      | Int            | Yes        | Valid term following uWaterloo term numbering system              |
+|**subject**   | String         | Yes        | Valid uWaterloo subject name                                      |
+|**catalog**   | Int            | Yes        | Valid uWaterloo course number                                     |
+|**section**   | String         | Yes        | Valid course section                                              |
+##### Response
+| Field Name           | Type          | Description              |
+|:---------------------|:--------------|:-------------------------|
+|**section info**      | String        | Section information      |
+
+> Note: **section info** is in the following format:
+>       "subject catalog section s-time-e-time weekdays building room instructor"
+>       where:
+>       * subject is the course subject,
+>       * catalog is the course number,
+>       * section is the course section,
+>              * s-time is the starting time for the course section,
+>              * e-time is the ending time for the course section,
+>              * weekdays is the days when the course section occurs,
+>              * building is the building where the course section occurs,
+>              * room is the room where the course section occurs,
+>              * instructor is the instructor for the course section).
 
 ### License
 uWaterloo Tools is licensed under the [MIT license.](https://github.com/elailai94/uWaterloo-Tools/blob/master/LICENSE)
