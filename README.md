@@ -94,6 +94,27 @@ uWaterloo Tools is a library for retrieving the required information from the Un
 >    * *building* is the building where the course section occurs,
 >    * *room* is the room where the course section occurs,
 >    * *instructor* is the instructor for the course section.
+#### Next Holiday
+```Racket
+(next-holiday date)
+```
+##### Parameters
+| Parameter    | Type           | Required   | Description                                                       |
+|:-------------|:---------------|:-----------|:------------------------------------------------------------------|
+|**date**      | String         | Yes        | Date in the following format: YYYY-MM-DD                          |
+##### Response
+| Field Name           | Type          | Description              |
+|:---------------------|:--------------|:-------------------------|
+|**holiday**           | String        | Next holiday             |
+
+> Note: **holiday** is in the following format:
+>
+>       "date name"
+>
+>       * *date* is the date of the holiday in the following format: YYYY-MM-DD,
+>       * *name* is the name of the holiday.
+#### Room Status
+
 
 ### License
 uWaterloo Tools is licensed under the [MIT license.](https://github.com/elailai94/uWaterloo-Tools/blob/master/LICENSE)
