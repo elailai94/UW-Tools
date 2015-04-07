@@ -140,4 +140,5 @@ uWaterloo Tools is a library for retrieving the required information from the Un
 >   * *title* is the course title.
 
 ### License
-uWaterloo Tools is licensed under the [MIT license.](https://github.com/elailai94/uWaterloo-Tools/blob/master/LICENSE)
+* uWaterloo Tools is licensed under the [MIT license](https://github.com/elailai94/uWaterloo-Tools/blob/master/LICENSE).
+* University of Waterloo API is licensed under the [ODL agreement v1](https://www.uwaterloo.ca/open-data/university-waterloo-open-data-license-agreement-v1).
