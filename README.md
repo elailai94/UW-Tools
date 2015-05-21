@@ -95,7 +95,7 @@ uWaterloo Tools is a library for retrieving the required information from the Un
 >    * *room* is the room where the course section occurs,
 >    * *instructor* is the instructor for the course section.
 
-#### Next Holiday
+#### Next Holiday On or After a Date
 ```Racket
 (next-holiday date)
 ```
@@ -143,6 +143,12 @@ uWaterloo Tools is a library for retrieving the required information from the Un
 ```Racket
 (cur-temp)
 ```
+##### Parameters
+None
+##### Response
+| Field Name                 | Type          | Description                    |
+|:---------------------------|:--------------|:-------------------------------|
+|**current temperature**     | Num           | Current temperature in Celcius |
 
 ### License
 * uWaterloo Tools is licensed under the [MIT license](https://github.com/elailai94/uWaterloo-Tools/blob/master/LICENSE.md).
