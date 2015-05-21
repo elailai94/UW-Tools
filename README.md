@@ -1,6 +1,6 @@
 # uWaterloo Tools
 ### About
-uWaterloo Tools is a library for retrieving the required information from the University of Waterloo API (see [https://www.github.com/uWaterloo/api-documentation](https://www.github.com/uWaterloo/api-documentation) for more information). It provides seven different methods to query information from the University of Waterloo API. It is written entirely in Racket.
+uWaterloo Tools is a library for retrieving the required information from the University of Waterloo API (see [https://www.github.com/uWaterloo/api-documentation](https://www.github.com/uWaterloo/api-documentation) for more information). It provides eight different methods to query information from the University of Waterloo API. It is written entirely in Racket.
 
 ### Library Import
 ```Racket
@@ -138,6 +138,11 @@ uWaterloo Tools is a library for retrieving the required information from the Un
 >   * *subject* is the course subject,
 >   * *catalog* is the course number,
 >   * *title* is the course title.
+
+#### Current Temperature
+```Racket
+(cur-temp)
+```
 
 ### License
 * uWaterloo Tools is licensed under the [MIT license](https://github.com/elailai94/uWaterloo-Tools/blob/master/LICENSE.md).
