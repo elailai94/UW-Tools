@@ -104,9 +104,9 @@ uWaterloo Tools is a library for retrieving the required information from the Un
 |:-------------|:---------------|:-----------|:------------------------------------------------------------------|
 |**date**      | String         | Yes        | Date in the following format: YYYY-MM-DD                          |
 ##### Response
-| Field Name           | Type          | Description              |
-|:---------------------|:--------------|:-------------------------|
-|**holiday**           | String        | Next holiday             |
+| Field Name           | Type          | Description                   |
+|:---------------------|:--------------|:------------------------------|
+|**holiday**           | String        | Next holiday on or after date |
 
 > Note: **holiday** is in the following format:
 >
