@@ -9,7 +9,7 @@
 ;; ********************************************************************************************
 
 (provide course-desc needs-consent? full-courses course-sections
-         section-info next-holiday room-status)
+         section-info next-holiday room-status cur-temp)
 
 ;; DATA ANALYSIS
 
@@ -121,6 +121,13 @@
 ;; Purpose: Consumes three strings, building, day, and time, and an integer, room. If the room
 ;; is used for a course at that time and day, then a string representing the course is
 ;; produced. If the room is not used, "FREE" is produced.
+
+;; cur-temp: (void) -> Num
+;; Conditions:
+;;     PRE: True
+;;     POST: Produces a Num.
+;; Purpose: Consumes (void) and produces a number representing the current temperature at the
+;; University of Waterloo in Celcius.
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -391,3 +398,19 @@
   ;; Output results from API query
   (define result (uw-api query))
   (free-room? day time result))
+
+;; see interface above
+(define (cur-temp)
+  (define cur-weather-info (uw-api "/weather/current"))
+  ;; cur-temp-lookup: (listof APIResult) -> Num
+  ;; Conditions:
+  ;;     PRE: True
+  ;;     POST: Produces a Num.
+  ;; Purpose: Consumes a list of APIResult, api-result-lst, and produces a number representing
+  ;; the current temperature at the University of Waterloo in Celcius.
+  (define (cur-temp-lookup api-result-lst)
+    (cond
+      [(string=? (first (first api-result-lst)) "temperature_current_c")
+       (second (first api-result-lst))]
+      [else (cur-temp-lookup (rest api-result-lst))]))
+  (cur-temp-lookup cur-weather-info))
